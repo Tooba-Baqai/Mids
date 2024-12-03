@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--?========== PRIMARY META TAGS ===========?-->
+
+    <title>Art Heaven</title>
+    <meta name="title" content="Web Developer">
+    <meta name="description" content="">
+
+    <!--?========== FAVICON ===========?-->
+
+    <link rel="shortcut icon" href="./ficon.png" type="image/x-icon">
+
+    <!--?========== GOOGLE FONTS ===========?-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--?========== FONTS AWESOME ===========?-->
+
+    <script src="https://kit.fontawesome.com/e22995487b.js" crossorigin="anonymous"></script>
+    
+    <!--?========== CUSTOM CSS ===========?-->
+
+    <link rel="stylesheet" href="require.css">
+    <link rel="stylesheet" href="service.css">
+
+    <style>
+        html, body {
+            height: 100%;
+            overflow: auto;
+            margin: 0; /* Ensure there's no default margin */
+        }
+        main {
+            min-height: 100vh; /* Make sure main takes up the full viewport height */
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px; /* Space between button text and icon */
+            padding: 10px 20px; /* Consistent padding */
+            border: none; /* Remove default border */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 10px; /* Space between buttons */
+        }
+
+        /* Button color styles */
+        .btn-primary {
+            background-color: #593E31; 
+            color: white; 
+        }
+
+        .btn-cart {
+            padding: 10px; 
+            background-color: transparent; /* Background color for cart button */
+        }
+
+        /* Additional Styles for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .header-buttons {
+                flex-direction: column; /* Stack buttons vertically on small screens */
+                align-items: center; /* Center align */
+                width: 100%; /* Full width */
+                margin-top: 10px; /* Space above buttons */
+            }
+
+            .header-buttons .btn {
+                width: 100%; /* Full width for buttons on mobile */
+                margin: 5px 0; /* Space between buttons */
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!--?========== HEADER ===========?-->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="./index.html" class="logo">
+                <img src="./images/logo-SyedIsmail.png" width="190" height="28" alt="home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="./index.html" class="label-lg navbar-link has-after">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="label-lg navbar-link has-after active">Services</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="./gallery.html" class="label-lg navbar-link has-after">Completed Project</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="./shop.html" class="label-lg navbar-link has-after">Shop</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="./contact.html" class="label-lg navbar-link has-after">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-buttons">
+                <a href="./shop.html" class="btn btn-primary">Shop Now</a>
+                <a href="./cart.html" class="btn btn-cart">
+                    <i class="fa-solid fa-cart-shopping" style="color: #593E31; font-size: 2rem;"></i>
+                </a>
+            </div>
+
+            <button class="nav-open-btn nav-toggle-btn" aria-label="menu" data-nav-toggler>
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+        <article>
+
+            <!--?========== SERVICE ===========?-->
+
+            <section class="section service has-bg-image" aria-labelledby="service-label" 
+            style="background-image: url(./images/service-bg.png);">
+                <div class="container">
+
+                    <h2 class="section-title headline-md text-center" id="service-label">Our Services</h2>
+
+                    <ul class="service-list">
+
+                        <li class="card-container">
+                            <div class="card card-md" style="background-color: hsl(177, 39%, 72%); padding:20px;">
+                                <div class="card-media">
+                                    <ion-icon name="color-filter-outline"></ion-icon>
+                                </div>
+                                <div>
+                                    <h3 class="card-title title-sm">Pottery</h3>
+                                    <p class="body-sm">
+                                        "Shaping clay into vessels or sculptures, pottery embodies ancient artistry and contemporary expression."
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="card-container">
+                            <div class="card card-md" style="background-color: hsl(41, 99%, 64%); padding:20px;">
+                                <div class="card-media">
+                                    <ion-icon name="color-filter-outline"></ion-icon>
+                                </div>
+                                <div>
+                                    <h3 class="card-title title-sm">ShowPiece</h3>
+                                    <p class="body-sm">
+                                        "ShowPiece: Handcrafted Elegance Redefined, Bringing Artistry into Every Showcase."
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="card-container">
+                            <div class="card card-md" style="background-color: hsl(19, 97%, 85%); padding:20px;">
+                                <div class="card-media">
+                                    <ion-icon name="color-filter-outline"></ion-icon>
+                                </div>
+                                <div>
+                                    <h3 class="card-title title-sm">Clay Plates</h3>
+                                    <p class="body-sm">
+                                        "Clay Plates: Where Function Meets Artistry, Elevating Dining with Handcrafted Elegance."
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="card-container">
+                            <div class="card card-md" style="background-color: hsl(221, 100%, 79%); padding:20px;">
+                                <div class="card-media">
+                                    <ion-icon name="color-filter-outline"></ion-icon>
+                                </div>
+                                <div>
+                                    <h3 class="card-title title-sm">Blue Pottery</h3>
+                                    <p class="body-sm">
+                                        "Blue Pottery: Timeless Elegance in Artisanal Craftsmanship, Infusing Spaces with Vibrant Beauty."
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="card-container">
+                            <div class="card card-md" style="background-color: hsl(76, 39%, 72%); padding:20px;">
+                                <div class="card-media">
+                                    <ion-icon name="color-filter-outline"></ion-icon>
+                                </div>
+                                <div>
+                                    <h3 class="card-title title-sm">Clay Matka</h3>
+                                    <p class="body-sm">
+                                        "Clay Matka: Traditional Craftsmanship, Preserving Heritage in Every Handcrafted Curve."
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="card-container">
+                            <div class="card card-md" style="background-color: hsl(245, 100%, 90%); padding:20px;">
+                                <div class="card-media">
+                                    <ion-icon name="color-filter-outline"></ion-icon>
+                                </div>
+                                <div>
+                                    <h3 class="card-title title-sm">Vase</h3>
+                                    <p class="body-sm">
+                                        "Vase: Graceful Craftsmanship, Elevating Spaces with Timeless Elegance and Floral Embrace."
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!--?========== FOOTER ===========?-->
+
+    <footer class="footer">
+        <div class="container">
+
+            <ul class="social-list">
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                    </a>
+                </li>
+                
+            </ul>
+
+            <p id="author" class="text-center"></p>
+
+        </div>
+    </footer>
+
+    <!--?========== CUSTOM JS ===========?-->
+
+    <script src="script.js"></script>
+
+    <!--?========== IONICON ===========?-->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

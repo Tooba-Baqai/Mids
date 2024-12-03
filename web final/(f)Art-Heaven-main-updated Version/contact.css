@@ -1,0 +1,182 @@
+/* ?============= CONTACT.CSS =============?*/
+
+
+
+/* *TABLE OF CONTENT*/
+
+    /* *COMPONENTS*/
+
+/************ Btn............................Buttons style */
+
+    /* *MAIN CONTENT*/
+
+/************ Contact........................Contact style */
+/************ Media queries..................Responsive for all devices */
+
+
+
+
+
+@import url(../components/btn.css);
+
+
+
+
+/* ?============= CONTACT =============?*/
+
+.contact {
+  background-color: var(--jet);
+  padding-block-start: calc(var(--section-padding) + 60px);
+}
+
+.contact .container {
+  display: grid;
+  gap: 48px;
+}
+
+.contact-form {
+  background-color: var(--white);
+  padding: 25px;
+}
+
+.contact-text {
+  margin-block: 5px 30px;
+}
+
+.contact .label {
+  margin-block-end: 8px;
+}
+
+.input-field {
+  padding: 10px 12px;
+  border: 1px solid var(--jet);
+  margin-block-end: 24px;
+  outline: none;
+  transition: box-shadow var(--transition-1);
+}
+
+.input-field:focus {
+  box-shadow: inset 0 0 0 1px var(--jet);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.contact-list .contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.contact-list .contact-item:not(:last-child) {
+  margin-block-end: 35px;
+}
+
+.contact-list .item-icon {
+  color: var(--jet);
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.contact-list .item-icon ion-icon {
+  font-size: 2.5rem;
+}
+
+.contact .label-lg {
+  color: var(--white_a80);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-400);
+  margin-block-end: 5px;
+}
+
+.contact .body-lg {
+  color: var(--white);
+  word-break: break-all;
+}
+
+select#product {
+  width: 100%;
+}
+  select#product {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-bottom: 10px;
+  }
+
+  select#product option {
+      padding: 12px;
+      font-size: 16px;
+  }
+
+/* The sumbit  message box */
+.alert {
+  padding: 20px;
+  background-color: #B9E9B9;
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  float: right;
+  font-size: 25px;
+  line-height: 20px;
+  cursor: pointer;
+  transition:  all 0.3s;
+}
+
+.closebtn:hover {
+  color: red;
+  font-size: 35px;
+}
+
+
+/* ?============= MEDIA QUERIES =============?*/
+
+/* *=========== RESPONSIVE FOR LARGE THAN 768PX SCREEN ===========* */
+
+@media (min-width: 768px) {
+
+  .contact-form {
+    padding: 35px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+}
+
+
+/* *=========== RESPONSIVE FOR LARGE THAN 992PX SCREEN ===========* */
+
+@media (min-width: 992px) {
+
+  .contact .container {
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-content {
+    width: 70%;
+    margin-inline: auto;
+  }
+
+}
