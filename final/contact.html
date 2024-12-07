@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Art Heaven</title>
+
+    <link rel="shortcut icon" href="./ficon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./require.css">
+    <link rel="stylesheet" href="./contact.css">
+
+    <!-- Additional Style for Scrolling -->
+    <style>
+        html, body {
+            height: 100%;
+            overflow: auto;
+        }
+        main {
+            min-height: 100vh;
+        }
+    </style>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e22995487b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" data-header>
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo-SyedIsmail.png" width="190" height="28" alt="home">
+            </a>
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a href="./index.html" class="label-lg navbar-link has-after">Home</a></li>
+                    <li class="navbar-item"><a href="./h.html" class="label-lg navbar-link has-after">About Us</a></li>
+                    <li class="navbar-item"><a href="./s.html" class="label-lg navbar-link has-after">Services</a></li>
+                    <li class="navbar-item"><a href="./gallery.html" class="label-lg navbar-link has-after">Gallery</a></li>
+                    <li class="navbar-item"><a href="./order.php" class="label-lg navbar-link has-after">Place Order</a></li>
+                    <li class="navbar-item"><a href="./contact.html" class="label-lg navbar-link has-after active">Contact</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; align-items: center;">
+                <a href="./order.php" class="btn btn-primary" style="background-color: #593E31; color:white; padding:10px 20px;">Order Now</a>
+                <button class="nav-open-btn nav-toggle-btn" aria-label="menu" data-nav-toggler>
+                    <i class="fa-solid fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <article>
+            <section class="section contact has-bg-image" aria-labelledby="contact-label" style="background-image: url(./images/contact-bg.png);">
+                <div class="container">
+                    <form action="contact.php" class="contact-form" method="post">
+                        <h2 class="headline-sm" id="contact-label">Get in touch</h2>
+                        <p class="contact-text body-md">Our friendly team would love to hear from you.</p>
+                        <div class="wrapper">
+                            <div>
+                                <label for="name" class="label">Your Name</label>
+                                <input type="text" name="name" id="name" placeholder="Name *" required class="input-field">
+                            </div>
+                            <div>
+                                <label for="email" class="label">Your Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email *" required class="input-field">
+                            </div>
+                        </div>
+                        <label for="address" class="label">Address</label>
+                        <input type="text" name="address" id="address" placeholder="Address *" class="input-field">
+                        <label for="message" class="label">Your message</label>
+                        <textarea name="message" id="message" placeholder="Your message *" required class="input-field"></textarea>
+                        <button class="btn btn-tertiary text-center" style="background-color: #593E31; color:white; padding:20px 20px; width:100%;" type="submit">Send Now</button>
+                    </form>
+
+                    <div class="contact-content">
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <div class="item-icon" style="background-color: hsl(177, 39%, 72%);">
+                                    <ion-icon name="call" aria-hidden="true"></ion-icon>
+                                </div>
+                                <div>
+                                    <p class="label-lg">Phone</p>
+                                    <a href="tel:03156274891" class="body-lg">03156274891</a>
+                                </div>
+                            </li>
+                            <li class="contact-item">
+                                <div class="item-icon" style="background-color: hsl(41, 99%, 64%);">
+                                    <ion-icon name="mail" aria-hidden="true"></ion-icon>
+                                </div>
+                                <div>
+                                    <p class="label-lg">Mail</p>
+                                    <a href="mailto:arts&heaven@gmail.com" class="body-lg">arts&heaven@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="contact-item">
+                                <div class="item-icon" style="background-color: hsl(19, 97%, 85%);">
+                                    <ion-icon name="location" aria-hidden="true"></ion-icon>
+                                </div>
+                                <div>
+                                    <p class="label-lg">Visit My Studio</p>
+                                    <address class="body-lg">Islamabad Capital Territory</address>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <ul class="social-list">
+                <li><a href="https://www.facebook.com/" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://www.twitter.com/" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://www.pinterest.com/" class="social-link"><ion-icon name="logo-pinterest"></ion-icon></a></li>
+            </ul>
+            <p id="author" class="text-center">Created by Tooba Baqai and Faareha Raza</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
